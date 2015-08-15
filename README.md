@@ -20,7 +20,7 @@ init('./', (err) => {
 ```
 
 ## API
-### init(path, cb)
+### init([path], cb(err))
 Create a new git repository at `path`.
 
 ## License

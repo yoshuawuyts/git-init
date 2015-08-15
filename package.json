@@ -8,13 +8,14 @@
     "test-cov": "standard && NODE_ENV=test istanbul cover test.js"
   },
   "repository": "yoshuawuyts/git-init",
-  "keywords": [],
+  "keywords": [
+    "git",
+    "create",
+    "init"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "istanbul": "^0.3.17",
-    "standard": "^5.1.0",
-    "tape": "^4.2.0"
   },
   "files": [
     "LICENSE",
