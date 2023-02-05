@@ -1,3 +1,4 @@
+/// <reference path="index.d.ts" />
 const exec = require('child_process').exec
 
 module.exports = init
