@@ -1,15 +1,18 @@
-const exec = require('child_process').exec
+/// <reference path="index.d.ts" />
+const execFile = require('child_process').execFile;
 
-module.exports = init
 
 // initialize a git repo
 // (str, fn) -> null
-function init (path, cb) {
+
+function init(path, cb) {
   if (typeof path === 'function') {
-    cb = path
-    path = ''
+    cb = path;
+    path = '';
   }
-  path = path || ''
-  exec('git init -q ' + path, cb)
+  path = path || '';
+
+  execFile('git', ['init', '-q', path], cb);
 }
 
+module.exports = init;
