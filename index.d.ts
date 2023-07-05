@@ -14,3 +14,5 @@ declare function init(cb: Callback): void;
  * @param cb An {@link exec} compatible callback.
  */
 declare function init(path: string, cb: Callback): void;
+
+export = init;
